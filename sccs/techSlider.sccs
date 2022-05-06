@@ -1,0 +1,130 @@
+.slider {
+   .slider__tech {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-sizing: border-box;
+      background-color: #f8f8f8;
+      padding: 25px 0 50px 0;
+      .slider__singleTechSlider {
+         position: relative;
+         display: flex;
+         justify-content: space-between;
+         width: 240px;
+         height: 160px;
+         margin: 16px 8px;
+         cursor: pointer;
+         background: #ffffff;
+         border: 1px solid #eaeaea;
+         box-sizing: border-box;
+         border-radius: 6px;
+         & h3 {
+            justify-content: flex-start;
+            font-size: 16px;
+            padding-left: 16px;
+            font-family: "TT Lakes Regular";
+            font-weight: 900;
+         }
+         & .slider__arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-right: 15px;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #ff3e79;
+            transition-duration: 0.5s;
+            border-radius: 50%;
+            & img {
+               justify-content: flex-end;
+            }
+            &:hover {
+               background-color: rgb(220, 217, 217);
+               transition-duration: 0.5s;
+               transition-timing-function: ease-in-out;
+               transform: rotate(360deg) scale(1.2);
+            }
+         }
+      }
+      .slider__tech_dots {
+         @extend %dots;
+      }
+      .open,
+      .close {
+         display: none;
+         cursor: pointer;
+         align-items: center;
+         margin: 35px 0 0 24px;
+         width: 150px;
+      }
+      .close {
+         width: 100px;
+      }
+      .open span,
+      .close span {
+         margin-left: 30px;
+      }
+   }
+}
+
+@media (min-width: 768px) {
+   .slider {
+      .slider__tech {
+         .slider__tech_wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            .slider__singleTechSlider {
+               width: auto;
+               margin: 8px 8px;
+               &:nth-child(n + 4) {
+                  display: none;
+               }
+            }
+         }
+         .slider__button {
+            &.close {
+               display: none;
+            }
+            &.open {
+               display: flex;
+            }
+            
+            & span {
+               font-size: 16px;
+               font-family: "TT Lakes Regular";
+               font-weight: 900;
+            }
+            & img {
+               transform: scale(1.2);
+               -webkit-transform: scale(1.2);
+               -moz-transform: scale(1.2);
+               -ms-transform: scale(1.2);
+               -o-transform: scale(1.2);
+            }
+            
+         }
+      }
+      .slider__tech_dots {
+         display: none;
+      }
+   }
+}
+
+@media (min-width: 1440px) {
+   .slider {
+      .slider__tech {
+         .slider__tech_wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            .slider__singleTechSlider {
+               // min-width: 224px;
+               &:nth-child(n + 4) {
+                  display: flex;
+               }
+            }
+         }
+      }
+   }
+}

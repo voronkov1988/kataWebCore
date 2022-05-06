@@ -1,0 +1,168 @@
+.slider {
+   min-width: 320px;
+   
+   h2 {
+      font-family: "TT Lakes Regular";
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #7e7e82;
+      background: linear-gradient(270deg, #ffffff 0%, #f8f8f8 98.61%);
+      margin: 0;
+      padding: 16px;
+   }
+   & .slider__wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 6px 0 26px;
+      padding-top: 40px;
+      background-color: #f2f2f2;
+      .slider__slides {
+         display: flex;
+         .slider__oneSlider {
+            display: flex;
+            flex-basis: 240px;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 240px;
+            height: auto;
+            padding: 20px 0 20px 16px;
+            margin: 16px 8px;
+            background-color: #fff;
+            border: 1px solid #eaeaea;
+            cursor: pointer;
+            border-radius: 6px;
+            & a {
+               padding-right: 16px;
+            }
+            .slider__arrow {
+               @extend %rightArrow;
+            }
+         }
+      }
+      .slider__dots {
+         display: flex;
+         justify-content: center;
+         width: 320px;
+         margin-top: 10px;
+         margin-left: 50%;
+         transform: translateX(-50%);
+         -webkit-transform: translateX(-50%);
+         -moz-transform: translateX(-50%);
+         -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+         .swiper-pagination-bullet {
+            width: 16px;
+            height: 16px;
+            &-active {
+               background-color: #b5b6bc;
+            }
+         }
+      }
+      
+      .open,
+      .close {
+         display: none;
+         display: flex;
+         align-items: center;
+         margin: 24px 0 0 24px;
+         width: 150px;
+      }
+      .close {
+         width: 100px;
+      }
+      .open span,
+      .close span {
+         margin-left: 30px;
+      }
+      .slider__button {
+         display: none;
+         cursor: pointer;
+      }
+   }
+   
+}
+
+@media (min-width: 768px) {
+   .slider {
+      min-width: 100%;
+      .slider__wrapper {
+         overflow: hidden;
+         .slider__slides {
+            display: grid;
+            gap: 6px;
+            grid-template-columns: 1fr 1fr 1fr;
+            .slider__oneSlider {
+               width: auto;
+               margin: 3px 10px;
+               & .swiper-slide {
+                  width: auto;
+                  height: auto;
+               }
+
+               .slide__slide_hidden {
+                  display: none;
+               }
+               &:nth-child(n + 7) {
+                  display: none;
+               }
+            }
+         }
+
+         .slider__dots {
+            display: none;
+         }
+         .slider__button {
+            & span {
+               font-size: 16px;
+               font-family: "TT Lakes Regular";
+               font-weight: 900;
+            }
+            & img {
+               transform: scale(1.2);
+               -webkit-transform: scale(1.2);
+               -moz-transform: scale(1.2);
+               -ms-transform: scale(1.2);
+               -o-transform: scale(1.2);
+            }
+         }
+         .open {
+            display: flex;
+         }
+      }
+   }
+}
+
+@media (min-width: 1440px) {
+   .slider {
+      margin-left: 160px;
+      min-width: 1120px;
+      & h2 {
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+      }
+      .slider__wrapper {
+         .slider__slides {
+            display: grid;
+            margin: 0 0;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-content: center;
+            grid-template-rows: 1fr;
+            .slider__oneSlider:nth-child(n + 7) {
+               display: flex;
+            }
+            .slider__oneSlider:nth-child(n + 9) {
+               display: none;
+            }
+         }
+      }
+      .open,
+      .close {
+         margin: 24px 0 0 15%;
+      }
+   }
+}
