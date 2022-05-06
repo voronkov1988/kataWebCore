@@ -24,7 +24,7 @@
 
 @font-face {
    font-family: 'TT Lakes Regular';
-   src: url('../fonts/TTLakes-Regular.woff');
+   src: url('../../fonts/TTLakes-Regular.woff');
    font-weight: normal;
    font-style: normal;
    font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
    font-family: 'TT Lakes Medium';
-   src: url('../fonts/TTLakes-Medium.woff');
+   src: url('../../fonts/TTLakes-Medium.woff');
    font-weight: normal;
    font-style: normal;
    font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
    font-family: 'TT Lakes BoldItalic';
-   src: url('../fonts/TTLakes-BoldItalic.woff');
+   src: url('../../fonts/TTLakes-BoldItalic.woff');
    font-weight: normal;
    font-style: normal;
    font-display: swap;
