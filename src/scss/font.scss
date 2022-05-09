@@ -1,15 +1,17 @@
+
 @font-face {
    font-family: 'TT Lakes Regular';
    src: url('../fonts/TTLakes-Regular.woff');
-   font-weight: normal;
+   font-weight: 400;
    font-style: normal;
    font-display: swap;
 }
 
+
 @font-face {
    font-family: 'TT Lakes Bold';
    src: url('../fonts/TTLakes-Bold.woff');
-   font-weight: normal;
+   font-weight: 600;
    font-style: normal;
    font-display: swap;
 }
@@ -17,23 +19,7 @@
 @font-face {
    font-family: 'TT Lakes Medium';
    src: url('../fonts/TTLakes-Medium.woff');
-   font-weight: normal;
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-   font-family: 'TT Lakes Regular';
-   src: url('../../fonts/TTLakes-Regular.woff');
-   font-weight: normal;
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-   font-family: 'TT Lakes Medium';
-   src: url('../../fonts/TTLakes-Medium.woff');
-   font-weight: normal;
+   font-weight: 500;
    font-style: normal;
    font-display: swap;
 }
@@ -41,7 +27,7 @@
 @font-face {
    font-family: 'TT Lakes BoldItalic';
    src: url('../../fonts/TTLakes-BoldItalic.woff');
-   font-weight: normal;
+   font-weight: 700;
    font-style: normal;
    font-display: swap;
 }
