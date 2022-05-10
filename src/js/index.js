@@ -88,7 +88,7 @@ const debounce = (func, delay) => {
 }
 
 const createSwiper = () => {
-    swiper = new Swiper('.slider__wrapper', {
+    const swiper = new Swiper('.slider__wrapper', {
         slidesPerView: 'auto',
         modules: [Pagination],
         pagination: {
