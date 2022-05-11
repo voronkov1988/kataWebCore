@@ -1,8 +1,8 @@
-@import "./mixin/font-face.scss";
-@include font-face("TTLakes", "TTLakes-Regular", 400);
-@include font-face("TTLakes", "TTLakes-Bold", 600);
-@include font-face("TTLakes", "TTLakes-Medium", 500);
-// @import "../src/scss/font.scss";
+// @import "./mixin/font-face.scss";
+// @include font-face("TTLakes", "TTLakes-Regular", 400);
+// @include font-face("TTLakes", "TTLakes-Bold", 600);
+// @include font-face("TTLakes", "TTLakes-Medium", 500);
+@import "./fonts.scss";
 @import "../scss/normalize.scss";
 
 @import "../scss/variables.scss";
