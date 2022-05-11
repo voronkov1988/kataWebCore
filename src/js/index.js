@@ -97,6 +97,8 @@ const createSwiper = () => {
         }
     })
 }
+
+
 const createTechSlider = () => {
     const swiperTech = new Swiper('.slider__tech', {
         slidesPerView: 'auto',
