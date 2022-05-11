@@ -146,8 +146,18 @@
       transform: translateX(0);
       opacity: 1;
       box-shadow: none;
+      .menu__top {
+         .menu__close {
+            display: none;
+         }
+         .menu__topLogo {
+            left: 10px;
+         }
+      }
+      
       .menu__infoBlock {
          margin-top: 80px;
       }
+      
    }
 }
