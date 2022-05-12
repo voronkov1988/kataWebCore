@@ -166,11 +166,17 @@
             min-width: 220px;
          }
          .lastItem {
-            align-self: flex-start;
-            text-align: center;
+            // align-self: flex-start;
+            flex-basis: 100%;
+            text-align: left;
             min-width: 100px;
             margin: 5px 0;
+            & .main__slideItem {
+               display: inline-block;
+               // max-width: auto;
+            }
          }
+         
       }
       .main__pc {
          display: block;
