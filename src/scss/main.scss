@@ -163,11 +163,13 @@
          flex-wrap: wrap;
          overflow: hidden;
          .main__slideItem {
-            min-width: 200px;
+            min-width: 220px;
          }
          .lastItem {
-            margin-top: 10px;
-            align-self: left;
+            align-self: flex-start;
+            text-align: center;
+            min-width: 100px;
+            margin: 5px 0;
          }
       }
       .main__pc {
