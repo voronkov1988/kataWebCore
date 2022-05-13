@@ -16,11 +16,11 @@
    }
    .main__slider {
       display: flex;
-      justify-content: flex-start;
       overflow: auto;
       padding: 20px 10px;
+      @include typeText(#7E7E82, 500, 14px, 'TT Lakes Medium');
       .main__slideItem {
-         min-width: 250px;
+         min-width: 220px;
          justify-content: center;
          text-align: center;
          box-sizing: border-box;
@@ -29,7 +29,7 @@
          color: #7e7e82;
          transition: 0.3s;
          padding: 5px;
-         font-size: 18px;
+         font-size: 15px;
          margin-left: 5px;
          border-radius: 6px;
          -webkit-border-radius: 6px;
@@ -85,7 +85,8 @@
          }
          .main__buttonRead {
             margin: 15px 0 15px 10px;
-            width: 220px;
+            max-width: 150px;
+            margin-left: 20px;
             cursor: pointer;
             .main__read {
                margin-left: 20px;
@@ -159,21 +160,21 @@
          }
       }
       .main__slider {
-         justify-content: space-between;
+         justify-content: left;
          flex-wrap: wrap;
          overflow: hidden;
          .main__slideItem {
-            min-width: 220px;
+            min-width: 19%;
          }
+         
          .lastItem {
-            // align-self: flex-start;
             flex-basis: 100%;
             text-align: left;
-            min-width: 100px;
+            
             margin: 5px 0;
             & .main__slideItem {
                display: inline-block;
-               // max-width: auto;
+               min-width: 150px;
             }
          }
          
